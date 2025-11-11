@@ -65,7 +65,7 @@ const handler = async (m, { conn, text, usedPrefix, command, isOwner }) => {
     if (!text || !plans[text]) {
         let response = 
 `╭━━━〔 🎀 𝐏𝐋𝐀𝐍𝐄𝐒 𝐏𝐑𝐄𝐌𝐈𝐔𝐌 🎀 〕━━━⬣
-│ 🌸 *Itsuki-Nakano IA - Sistema Premium*
+│ 🌸 *Oriax - Lm IA - Sistema Premium*
 ╰━━━━━━━━━━━━━━━━━━━━━━⬣
 
 💎 *Planes Disponibles:*
@@ -86,7 +86,7 @@ ${Object.entries(plans).map(([plan, data]) =>
 👑 *Modo Creador:*
 │ ${usedPrefix}premium <plan> (Gratis)
 
-🌸 *Itsuki te ofrece beneficios exclusivos...* (◕‿◕✿)`;
+🌸 *Oriax - Lm te ofrece beneficios exclusivos...* (◕‿◕✿)`;
 
         return conn.reply(m.chat, response, m, ctxWarn);
     }
@@ -103,7 +103,7 @@ ${Object.entries(plans).map(([plan, data]) =>
 │ 📉 *Faltan:* ¥${(selectedPlan.cost - user.coin).toLocaleString()}
 ╰━━━━━━━━━━━━━━━━━━━━━━⬣
 
-🌸 *Itsuki sugiere que consigas más monedas...* (´･ω･\`)`, 
+🌸 *Oriax - Lm sugiere que consigas más monedas...* (´･ω･\`)`,
         m, ctxErr);
     }
 
@@ -144,7 +144,7 @@ ${Object.entries(plans).map(([plan, data]) =>
 • Funciones especiales desbloqueadas
 • Sin límites de uso
 
-🌸 *¡Itsuki te da la bienvenida al club premium!* (◕‿◕✿)
+🌸 *¡Oriax - Lm te da la bienvenida al club premium!* (◕‿◕✿)
 🎀 *Disfruta de tus nuevos beneficios* 💫`, 
     m, ctxOk);
 

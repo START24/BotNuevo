@@ -1,4 +1,4 @@
-// * * * Adaptación: Itsuki Nakano AI
+// * * * Adaptación: Oriax - Lm AI
 // * * * Base: Sunaookami Shiroko (S.D.D) Ltc.
 
 import { existsSync } from 'fs'
@@ -99,7 +99,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     const interactiveMessage = proto.Message.InteractiveMessage.fromObject({
       body: proto.Message.InteractiveMessage.Body.fromObject({ text: menuText }),
       footer: proto.Message.InteractiveMessage.Footer.fromObject({
-        text: '> 𝐈𝐭𝐬𝐮𝐤𝐢 𝐍𝐚𝐤𝐚𝐧𝐨-𝐈𝐀 𝐯2 🌸'
+        text: '> 𝐎𝐫𝐢𝐚𝐱 - 𝐋𝐦 𝐈𝐀 𝐯2 🌸'
       }),
       header,
       nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.fromObject({
@@ -127,7 +127,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     await conn.sendMessage(
       m.chat,
       {
-        text: `🍙 *ITSUNI MENÚ BÁSICO*\n\n• ${_p}menu - Menú principal\n• ${_p}ping - Estado del bot\n• ${_p}prefijos - Ver prefijos\n\n⚠️ *Error:* ${e.message}`
+      text: `🍙 *Oriax - Lm MENÚ BÁSICO*\n\n• ${_p}menu - Menú principal\n• ${_p}ping - Estado del bot\n• ${_p}prefijos - Ver prefijos\n\n⚠️ *Error:* ${e.message}`
       },
       { quoted: m }
     )

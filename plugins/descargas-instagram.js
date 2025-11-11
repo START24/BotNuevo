@@ -13,29 +13,29 @@ let handler = async (m, { conn, usedPrefix, args }) => {
   try {
     if (!args[0]) {
       return conn.reply(m.chat,
-        `🎀 *Itsuki-Nakano IA - Descargador Instagram*\n\n` +
+        `🎀 *Oriax - Lm IA - Descargador Instagram*\n\n` +
         `✦ *Uso correcto:*\n` +
         `*${usedPrefix}ig* <url_de_instagram>\n\n` +
         `✦ *Ejemplo:*\n` +
         `*${usedPrefix}ig* https://www.instagram.com/p/xxxxx\n\n` +
-        `🌸 *Itsuki te ayudará a descargar el contenido...* (◕‿◕✿)`,
+        `🌸 *Oriax - Lm te ayudará a descargar el contenido...* (◕‿◕✿)`,
       m, ctxWarn)
     }
 
     const url = args[0]
     if (!url.match(/instagram\.com/)) {
       return conn.reply(m.chat,
-        `🎀 *Itsuki-Nakano IA*\n\n` +
+        `🎀 *Oriax - Lm IA*\n\n` +
         `❌ *URL no válida*\n\n` +
         `✦ Por favor envía un enlace de Instagram válido\n` +
         `✦ Ejemplo: https://www.instagram.com/p/xxxxx\n\n` +
-        `🌸 *Itsuki está confundida...* (´･ω･\`)`,
+        `🌸 *Oriax - Lm está confundida...* (´･ω･\`)`,
       m, ctxErr)
     }
 
     await m.react('📥')
     await conn.reply(m.chat,
-      `🎀 *Itsuki-Nakano IA*\n\n` +
+      `🎀 *Oriax - Lm IA*\n\n` +
       `📥 *Procesando contenido de Instagram...*\n` +
       `✦ Analizando enlace...\n` +
       `✦ Preparando descarga...\n\n` +
@@ -87,7 +87,7 @@ let handler = async (m, { conn, usedPrefix, args }) => {
     if (isVideo) {
       await conn.sendMessage(m.chat, {
         video: { url: mediaUrl },
-        caption: `🎀 *Itsuki-Nakano IA v3.5.1 Beta*\n` +
+        caption: `🎀 *Oriax - Lm IA v3.5.1 Beta*\n` +
                  `╰ Creado por: LeoXzzsy 👑 (Erenz)\n\n` +
                  `📹 ${mediaTitle}\n` +
                  `⭐ Descargado desde Instagram\n` +
@@ -96,7 +96,7 @@ let handler = async (m, { conn, usedPrefix, args }) => {
     } else {
       await conn.sendMessage(m.chat, {
         image: { url: mediaUrl },
-        caption: `🎀 *Itsuki-Nakano IA v4.3.1 Oficial*\n` +
+        caption: `🎀 *Oriax - Lm IA v4.3.1 Oficial*\n` +
                  `╰ Creado por: LeoXzzsy 👑(Erenz)\n\n` +
                  `🖼️ ${mediaTitle}\n` +
                  `⭐ Descargado desde Instagram\n` +
@@ -109,14 +109,14 @@ let handler = async (m, { conn, usedPrefix, args }) => {
   } catch (error) {
     console.error('❌ Error en descarga Instagram:', error)
     await conn.reply(m.chat,
-      `🎀 *Itsuki-Nakano IA*\n\n` +
+      `🎀 *Oriax - Lm IA*\n\n` +
       `❌ *Error en la descarga*\n\n` +
       `✦ *Detalles:* ${error.message}\n\n` +
       `✦ *Posibles soluciones:*\n` +
       `• Enlace incorrecto o privado\n` +
       `• Contenido restringido o eliminado\n\n` +
-      `🌸 *Itsuki lo intentará de nuevo...* (´；ω；\`)\n\n` +
-      `🎀 *Itsuki-Nakano IA v3.5.1 Beta*`,
+      `🌸 *Oriax - Lm lo intentará de nuevo...* (´；ω；\`)\n\n` +
+      `🎀 *Oriax - Lm IA v3.5.1 Beta*`,
     m, ctxErr)
     await m.react('❌')
   }

@@ -97,7 +97,7 @@ const handler = async (m, { conn, text, usedPrefix, command, isOwner, mentionedJ
 │ 💰 *Costo:* ¥0 (Regalo)
 ╰━━━━━━━━━━━━━━━━━━━━━━⬣
 
-🌸 *¡Regalo especial de Itsuki!* 🎀`, m, ctxOk);
+🌸 *¡Regalo especial de Oriax - Lm!* 🎀`, m, ctxOk);
 
         await m.react('🎁');
         return;
@@ -132,7 +132,7 @@ const handler = async (m, { conn, text, usedPrefix, command, isOwner, mentionedJ
     if (!text || !plans[text]) {
         let response = 
 `╭━━━〔 🎀 𝐏𝐋𝐀𝐍𝐄𝐒 𝐏𝐑𝐄𝐌𝐈𝐔𝐌 🎀 〕━━━⬣
-│ 🌸 *Sistema Premium - Itsuki*
+│ 🌸 *Sistema Premium - Oriax - Lm*
 ╰━━━━━━━━━━━━━━━━━━━━━━⬣
 
 💎 *Planes Disponibles:*

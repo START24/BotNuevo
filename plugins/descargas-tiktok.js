@@ -1,4 +1,4 @@
-// Código Adaptado Para Itsuki-IA 💕
+// Código Adaptado Para Oriax - Lm IA 💕
 
 
 import axios from 'axios'

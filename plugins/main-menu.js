@@ -76,7 +76,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     // === Crear mensaje interactivo ===
     const interactiveMessage = proto.Message.InteractiveMessage.fromObject({
       body: proto.Message.InteractiveMessage.Body.fromObject({ text: menuText }),
-      footer: proto.Message.InteractiveMessage.Footer.fromObject({ text: '> 𝐈𝐭𝐬𝐮𝐤𝐢 𝐍𝐚𝐤𝐚𝐧𝐨-𝐈𝐀 𝐯2 🌸' }),
+      footer: proto.Message.InteractiveMessage.Footer.fromObject({ text: '> 𝐎𝐫𝐢𝐚𝐱 - 𝐋𝐦 𝐈𝐀 𝐯2 🌸' }),
       header,
       nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.fromObject({
         buttons: nativeButtons
@@ -89,14 +89,14 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
   } catch (e) {
     console.error('❌ Error en el menú:', e)
     await conn.sendMessage(m.chat, {
-      text: `🍙 *ITSUNI MENÚ BÁSICO*\n\n• ${_p}menu - Menú principal\n• ${_p}ping - Estado del bot\n• ${_p}prefijos - Ver prefijos\n\n⚠️ *Error:* ${e.message}`
+      text: `🍙 *Oriax - Lm MENÚ BÁSICO*\n\n• ${_p}menu - Menú principal\n• ${_p}ping - Estado del bot\n• ${_p}prefijos - Ver prefijos\n\n⚠️ *Error:* ${e.message}`
     }, { quoted: m })
   }
 }
 
 handler.help = ['menu','help']
 handler.tags = ['main']
-handler.command = ['itsuki', 'menu', 'help']
+handler.command = ['oriax', 'menu', 'help']
 
 handler.before = async function (m, { conn }) {
 

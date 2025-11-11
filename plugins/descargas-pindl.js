@@ -23,7 +23,7 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
 │ ${usedPrefix}premium semana  
 │ ${usedPrefix}premium mes
 
-🌸 *¡Únete al club exclusivo de Itsuki!* (◕‿◕✿)`, 
+🌸 *¡Únete al club exclusivo de Oriax - Lm!* (◕‿◕✿)`,
     m, ctxErr);
   }
 
@@ -41,7 +41,7 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
 │ ${usedPrefix + command} https://pinterest.mx/pin/123456789
 ╰━━━━━━━━━━━━━━━━━━━━━━⬣
 
-🌸 *Itsuki necesita un enlace válido...* 📥`, 
+🌸 *Oriax - Lm necesita un enlace válido...* 📥`,
     m, ctxWarn);
   }
 
@@ -70,7 +70,7 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
 │ • https://pinterest.mx/pin/XXXXXXX
 ╰━━━━━━━━━━━━━━━━━━━━━━⬣
 
-🌸 *Itsuki solo acepta enlaces de Pinterest...* 📌`, 
+🌸 *Oriax - Lm solo acepta enlaces de Pinterest...* 📌`,
     m, ctxErr);
     }
 
@@ -85,7 +85,7 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
 │ 💫 Paso 4: Preparando descarga
 ╰━━━━━━━━━━━━━━━━━━━━━━⬣
 
-🌸 *Itsuki está trabajando en tu descarga...* 📌`, 
+🌸 *Oriax - Lm está trabajando en tu descarga...* 📌`,
     m, ctxWarn);
 
     // Probar múltiples APIs
@@ -138,7 +138,7 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
 │ • Error temporal del servidor
 ╰━━━━━━━━━━━━━━━━━━━━━━⬣
 
-🌸 *Itsuki intentó ${errorCount} APIs diferentes...* (´･ω･\`)
+🌸 *Oriax - Lm intentó ${errorCount} APIs diferentes...* (´･ω･\`)
 🎀 *Prueba con otro enlace o intenta más tarde*`, 
     m, ctxErr);
     }
@@ -174,7 +174,7 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
 │ ${e.message}
 ╰━━━━━━━━━━━━━━━━━━━━━━⬣
 
-🌸 *Itsuki lo sentirá mucho...* (´；ω；\`)
+🌸 *Oriax - Lm lo sentirá mucho...* (´；ω；\`)
 🎀 *Por favor, intenta con otro enlace*`, 
     m, ctxErr);
   }

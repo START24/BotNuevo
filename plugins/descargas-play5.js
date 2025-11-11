@@ -49,7 +49,7 @@ const handler = async (m, { conn, args, command, usedPrefix }) => {
 
   const input = args.join(' ').trim()
   if (!input) {
-    // reacción y mensaje instructivo con decoración Itsuki
+    // reacción y mensaje instructivo con decoración Oriax - Lm
     await conn.sendMessage(m.chat, { react: { text: '🌀', key: m.key } })
     return conn.sendMessage(
       m.chat,
@@ -115,7 +115,7 @@ ${metadata.url}
 ‐ ダ *ɪᴛsᴜᴋɪ ɴᴀᴋᴀɴᴏ ᴀɪ* ギ
 `.trim()
 
-    // Enviar mini tarjeta + thumbnail (con contextInfo estilo Itsuki)
+    // Enviar mini tarjeta + thumbnail (con contextInfo estilo Oriax - Lm)
     await conn.sendMessage(
       m.chat,
       {

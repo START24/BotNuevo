@@ -43,7 +43,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 
     await conn.sendMessage(m.chat, {
       image: Buffer.from(resultBuffer),
-      caption: `✨ *Imagen Mejorada HD*\n💫 *Itsuki-Nakano*`
+      caption: `✨ *Imagen Mejorada HD*\n💫 *Oriax - Lm*`
     }, { quoted: m })
 
     await conn.sendMessage(m.chat, { react: { text: '✅', key: m.key } })

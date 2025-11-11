@@ -1,5 +1,5 @@
 /* 
-- tagall versión Itsuki Nakano IA  
+- tagall versión Oriax - Lm IA  
 - Etiqueta a todos con estilo tsundere vibes 🌸  
 - Con frases aleatorias decoradas ✨
 */
@@ -15,7 +15,7 @@ const handler = async (m, { isOwner, isAdmin, conn, text, participants, args, co
     throw false;
   }
 
-  // Frases tsundere aleatorias de Itsuki 🌸
+  // Frases tsundere aleatorias de Oriax - Lm 🌸
   const frases = [
     '¡Ya están todos etiquetados, más les vale leerlo o me enfado! 😡',
     '¡No ignoren esto, tontos! Lo digo en serio~ 💢',
@@ -28,7 +28,7 @@ const handler = async (m, { isOwner, isAdmin, conn, text, participants, args, co
 
   const pesan = args.join` `;
   const oi = pesan 
-    ? `「 🌸 Itsuki Nakano dice 🌸 」\n✦ *${pesan}*`
+    ? `「 🌸 Oriax - Lm dice 🌸 」\n✦ *${pesan}*`
     : `😡 ¡Baka! Presten atención todos de una vez, no me hagan repetirlo. 💢`;
 
   // Texto decorado con marco kawaii 🌸
@@ -47,12 +47,12 @@ const handler = async (m, { isOwner, isAdmin, conn, text, participants, args, co
 
   teks += `╰━━━━━━━━━━━━━━━━━━━━⬣
 
-╭━━━〔 🪷 *ITSUKI NAKANO - AI* 🪷 〕━━━⬣
+╭━━━〔 🪷 *Oriax - Lm - AI* 🪷 〕━━━⬣
 ┃ "${fraseFinal}"
 ╰━━━━━━━━━━━━━━━━━━━━⬣
 `;
 
-  // Imagen de Itsuki 🌸
+  // Imagen de Oriax - Lm 🌸
   const imgUrl = 'https://files.catbox.moe/fqflxj.jpg';
 
   await conn.sendMessage(m.chat, { 

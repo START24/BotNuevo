@@ -474,7 +474,7 @@ export async function handler(chatUpdate) {
       ).find(p => p[1])
       // ===== FIN DE LA MODIFICACIÓN =====
 
-      // ===== SISTEMA DE MANTENIMIENTO ITSUNI - INICIO =====
+      // ===== SISTEMA DE MANTENIMIENTO ORIAX - LM - INICIO =====
       if (match && match[0]) {
           usedPrefix = match[0][0]
           let noPrefix = m.text.replace(usedPrefix, '')
@@ -486,8 +486,8 @@ export async function handler(chatUpdate) {
               // Permitir siempre los comandos de mantenimiento
               const allowedCommands = ['mantenimiento', 'mant', 'maintenance', 'mantenimientos', 'limpiarmantenimiento']
               if (!allowedCommands.includes(command)) {
-                  return this.reply(m.chat, 
-                      `🍙🚧 *ITSUKI - Comando en Mantenimiento* ⚠️\n\n` +
+                  return this.reply(m.chat,
+                      `🍙🚧 *Oriax - Lm - Comando en Mantenimiento* ⚠️\n\n` +
                       `❌ El comando *${command}* está temporalmente desactivado\n\n` +
                       `📚 "Este comando está en mantenimiento o mejoras"\n` +
                       `🛠️ "Por favor, intenta más tarde"\n\n` +
@@ -498,7 +498,7 @@ export async function handler(chatUpdate) {
               }
           }
       }
-      // ===== SISTEMA DE MANTENIMIENTO ITSUNI - FIN =====
+      // ===== SISTEMA DE MANTENIMIENTO ORIAX - LM - FIN =====
 
       const rolesCtx = await roleFor(m.sender)
       if (typeof plugin.before === 'function') {

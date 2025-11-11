@@ -8,7 +8,7 @@ let handler = async (m, { conn, text, usedPrefix }) => {
 
   if (!text) {
     return conn.reply(m.chat, `
-🎀 Itsuki-Nakano - Descargar Multimedia 🎥✨️
+🎀 Oriax - Lm - Descargar Multimedia 🎥✨️
 
 📝 Forma de uso:
 • ${usedPrefix}play <nombre de la canción>
@@ -25,7 +25,7 @@ let handler = async (m, { conn, text, usedPrefix }) => {
   }
 
   try {
-    await conn.reply(m.chat, '*🔎 Itsuki Esta Buscando Tu Audio*', m, ctxOk)
+    await conn.reply(m.chat, '*🔎 Oriax - Lm está buscando tu audio*', m, ctxOk)
 
     const search = await yts(text)
     if (!search.videos.length) throw new Error('No encontré resultados para tu búsqueda.')

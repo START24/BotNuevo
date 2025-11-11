@@ -13,7 +13,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 
   if (!text) {
     return conn.reply(m.chat, `
-🍙📚 Itsuki Nakano - Buscador de Música 🎵✨
+🍙📚 Oriax - Lm - Buscador de Música 🎵✨
 
 🌟 ¡Como tutora musical, puedo ayudarte a encontrar canciones!
 
@@ -37,7 +37,7 @@ ${usedPrefix + command} <nombre de la canción>
 
     const video = searchResults.videos[0]
 
-    const songInfo = `🎵📚 Itsuki Nakano - Música Encontrada 🍙✨
+    const songInfo = `🎵📚 Oriax - Lm - Música Encontrada 🍙✨
 
 🎼 Título: ${video.title}
 ⏱️ Duración: ${video.timestamp}

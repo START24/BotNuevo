@@ -13,7 +13,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 
     if (!/webp|image|video/g.test(mime) && !args[0]) {
       return conn.reply(m.chat, `
-🍙 *Itsuki Nakano - Stickers* 🖼
+🍙 *Oriax - Lm - Stickers* 🖼
 
 *✨️ Onii-chan~ Responde a una imagen/video con .s 🪷*
 
@@ -69,7 +69,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
         try {
           // Para URLs usar sticker-creator
           const stickerOptions = {
-            pack: 'Itsuki Nakano',
+            pack: 'Oriax - Lm',
             author: 'Tutora Virtual',
             type: StickerTypes.FULL,
             categories: ['🎨', '✨'],
