@@ -59,7 +59,7 @@ let handler = async (m, { conn }) => {
 
     // Mensaje del ping REAL
     const pingMessage = `
-${emoji} **Itsuki Nakano - Estado del Sistema** ✨️📊
+${emoji} **Oriax - Lm - Estado del Sistema** ✨️📊
 
 🏓 *Velocidad REAL:* ${ping} ms
 📊 *Conexión:* ${speed}

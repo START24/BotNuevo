@@ -1,5 +1,5 @@
 // Codigo Creado por Félix Creador de Deymoon Club 
-// Codigo adaptado para Itsuki Nakano IA
+// Codigo adaptado para Oriax - Lm IA
 
 let autoadminGlobal = global.autoadminGlobal ?? true
 global.autoadminGlobal = autoadminGlobal

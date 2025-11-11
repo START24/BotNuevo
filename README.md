@@ -1,9 +1,9 @@
-# `👑 Itsuki Nakano - IA V2` ✨
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Oswald+Code&pause=1000&color=FF69B4&width=435&lines=Bienvenido+al+Repositorio;Itsuki+Nakano+IA+V2;Versión+6.4.1+Oficial;Creado+por+LeoXzzsy;)](https://git.io/typing-svg)
+# `👑 Oriax - Lm - IA V2` ✨
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Oswald+Code&pause=1000&color=FF69B4&width=435&lines=Bienvenido+al+Repositorio;Oriax+-+Lm+IA+V2;Versión+6.4.1+Oficial;Creado+por+LeoXzzsy;)](https://git.io/typing-svg)
 
 <!-- Banner -->
 <h1 align="center">
-  <img src="https://qu.ax/yhEAM.jpg" width="700" alt="Itsuki-Nakano IA Banner Ofc"/>
+  <img src="https://qu.ax/yhEAM.jpg" width="700" alt="Oriax - Lm IA Banner Ofc"/>
 </h1>
 
 [![Version](https://img.shields.io/badge/Version-6.4.1-pink.svg)]()
@@ -13,7 +13,7 @@
 [![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)]()
 [![License](https://img.shields.io/badge/License-MIT-orange.svg)]()
 
-# 🎀 `Itsuki Nakano IA - V2` 🌸
+# 🎀 `Oriax - Lm IA - V2` 🌸
 
 **Bot Multi-Prefijo con Sistema de Comandos Avanzado**  
 *La evolución del bot temático más completo de WhatsApp - ¡Ahora con más potencia y personalización!*
@@ -35,7 +35,7 @@ termux-setup-storage
 apt update && apt upgrade && pkg install -y git nodejs ffmpeg imagemagick yarn
 ```
 ```bash
-git clone https://github.com/leoxito/Itsuki-NakanoV2 && cd Itsuki-NakanoV2
+git clone https://github.com/leoxito/Oriax-LmV2 && cd Oriax-LmV2
 ```
 ```bash
 npm install
@@ -51,6 +51,6 @@ href="https://github.com/leoxito"><img src="https://github.com/leoxito.png" widt
 
 ## `Colaboradores y Agradecimiento` ❤️
 
-<a href="https://github.com/xzzys26/Itsuki-NakanoV2/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=xzzys26/Itsuki-IA&cache=bust" alt="Contribuidores">
+<a href="https://github.com/xzzys26/Oriax-LmV2/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=xzzys26/Oriax-Lm-IA&cache=bust" alt="Contribuidores">
 </a>

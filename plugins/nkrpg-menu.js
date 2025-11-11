@@ -16,7 +16,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
             jefes: {
                 'Slime Rey': { vida: 500, ataque: 30, defensa: 15, recompensa: { coin: 200, exp: 100 }, emoji: '👑' },
                 'Dragón Ancestral': { vida: 1000, ataque: 50, defensa: 25, recompensa: { coin: 500, exp: 300 }, emoji: '🐉' },
-                'Itsuki Oscura': { vida: 1500, ataque: 70, defensa: 35, recompensa: { coin: 1000, exp: 500 }, emoji: '👻' }
+                'Oriax - Lm Oscura': { vida: 1500, ataque: 70, defensa: 35, recompensa: { coin: 1000, exp: 500 }, emoji: '👻' }
             },
             razas: {
                 'Humano': { 
@@ -54,7 +54,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
                 armas: {
                     'Espada Básica': { ataque: 15, precio: 100, tipo: 'fisica', emoji: '⚔️' },
                     'Bastón Mágico': { ataque: 25, precio: 300, tipo: 'magica', emoji: '🪄' },
-                    'Arco de Itsuki': { ataque: 35, precio: 500, tipo: 'fisica', emoji: '🏹' },
+                    'Arco de Oriax - Lm': { ataque: 35, precio: 500, tipo: 'fisica', emoji: '🏹' },
                     'Grimorio Oscuro': { ataque: 40, precio: 700, tipo: 'magica', emoji: '📖' },
                     'Guadaña Demoníaca': { ataque: 45, precio: 900, tipo: 'demoníaca', emoji: '⚰️' },
                     'Espada Legendaria': { ataque: 60, precio: 1500, tipo: 'legendaria', emoji: '⚜️' }
@@ -62,7 +62,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
                 armaduras: {
                     'Túnica Básica': { defensa: 10, precio: 80, emoji: '👕' },
                     'Armadura de Acero': { defensa: 20, precio: 250, emoji: '🛡️' },
-                    'Manto de Itsuki': { defensa: 30, precio: 400, emoji: '🧥' },
+                    'Manto de Oriax - Lm': { defensa: 30, precio: 400, emoji: '🧥' },
                     'Túnica Élfica': { defensa: 25, precio: 350, emoji: '🎯' },
                     'Armadura Demoníaca': { defensa: 35, precio: 600, emoji: '🔥' },
                     'Armadura Divina': { defensa: 50, precio: 1200, emoji: '✨' }
@@ -237,7 +237,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 │ • ${usedPrefix}nkrpg usar <objeto>
 ╰━━━━━━━━━━━━━━━━━━━━━━⬣
 
-🌠 *¡Sistema RPG Modular - Itsuki Nakano IA!* ✨`
+🌠 *¡Sistema RPG Modular - Oriax - Lm IA!* ✨`
 
         return conn.reply(m.chat, menu, m, ctxOk)
     }

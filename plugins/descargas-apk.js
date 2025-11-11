@@ -3,7 +3,7 @@ import fetch from 'node-fetch'
 /**
 
 🎀 CREADO POR: LeoXzzsy
-🌸 ADAPTADO PARA: Itsuki-Nakano IA
+🌸 ADAPTADO PARA: Oriax - Lm IA
 📚 VERSIÓN: 3.4.0 Beta
 🏷️ SISTEMA DE DESCARGAS APK PREMIUM
 */
@@ -29,7 +29,7 @@ return conn.reply(m.chat,
 │ ${usedPrefix}premium semana  
 │ ${usedPrefix}premium mes
 
-🌸 *¡Únete al club exclusivo de Itsuki!* (◕‿◕✿)`, 
+🌸 *¡Únete al club exclusivo de Oriax - Lm!* (◕‿◕✿)`,
 m, ctxErr);
 }
 
@@ -48,7 +48,7 @@ return conn.reply(m.chat,
 │ ${usedPrefix + command} spotify
 ╰━━━━━━━━━━━━━━━━━━━━━━⬣
 
-🌸 *Itsuki descargará la aplicación para ti...* (◕‿◕✿)`,
+🌸 *Oriax - Lm descargará la aplicación para ti...* (◕‿◕✿)`,
 m, ctxWarn)
 }
 
@@ -64,7 +64,7 @@ await conn.reply(m.chat,
 │ 💎 *Tipo:* Descarga Premium
 ╰━━━━━━━━━━━━━━━━━━━━━━⬣
 
-🌸 *Itsuki está trabajando en ello...* 📱`,    
+🌸 *Oriax - Lm está trabajando en ello...* 📱`,
 m, ctxWarn    
 )    
 
@@ -108,7 +108,7 @@ await conn.reply(m.chat,
 │ 💎 *Estado:* Preparando descarga
 ╰━━━━━━━━━━━━━━━━━━━━━━⬣
 
-🌸 *Itsuki está preparando tu APK...* ⬇️`,    
+🌸 *Oriax - Lm está preparando tu APK...* ⬇️`,
 m, ctxOk    
 )    
 
@@ -151,7 +151,7 @@ await conn.reply(m.chat,
 │ • Intenta con otro nombre
 ╰━━━━━━━━━━━━━━━━━━━━━━⬣
 
-🌸 *Itsuki lo intentará de nuevo...* (´；ω；\`)
+🌸 *Oriax - Lm lo intentará de nuevo...* (´；ω；\`)
 🎀 *Por favor, intenta con otro nombre*`,    
 m, ctxErr    
 )    

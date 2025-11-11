@@ -1,7 +1,7 @@
 // welcome-control.js
 /**
  * 🎀 CREADO POR: LeoXzzsy
- * 🌸 ADAPTADO PARA: Itsuki-Nakano IA
+ * 🌸 ADAPTADO PARA: Oriax - Lm IA
  * 📚 VERSIÓN: 3.4.0 Beta
  * 🏷️ SISTEMA DE CONTROL WELCOME
  */
@@ -26,7 +26,7 @@ let handler = async (m, { conn, usedPrefix, command, isAdmin, isBotAdmin }) => {
       return conn.reply(m.chat, 
         `✅ *Welcome activado*\n\n` +
         `Ahora se enviarán mensajes de bienvenida y despedida en este grupo\n\n` +
-        `🎀 *Itsuki-Nakano IA v3.4.0 Beta*\n` +
+        `🎀 *Oriax - Lm IA v3.4.0 Beta*\n` +
         `╰ Creado por: LeoXzzsy`, 
       m, ctxOk)
     } 
@@ -35,7 +35,7 @@ let handler = async (m, { conn, usedPrefix, command, isAdmin, isBotAdmin }) => {
       return conn.reply(m.chat, 
         `❌ *Welcome desactivado*\n\n` +
         `Ya no se enviarán mensajes de bienvenida y despedida en este grupo\n\n` +
-        `🎀 *Itsuki-Nakano IA v3.4.0 Beta*\n` +
+        `🎀 *Oriax - Lm IA v3.4.0 Beta*\n` +
         `╰ Creado por: LeoXzzsy`, 
       m, ctxErr)
     }
@@ -47,7 +47,7 @@ let handler = async (m, { conn, usedPrefix, command, isAdmin, isBotAdmin }) => {
         `Usa:\n` +
         `*${usedPrefix}welcome on* - Para activar\n` +
         `*${usedPrefix}welcome off* - Para desactivar\n\n` +
-        `🎀 *Itsuki-Nakano IA v3.4.0 Beta*\n` +
+        `🎀 *Oriax - Lm IA v3.4.0 Beta*\n` +
         `╰ Creado por: LeoXzzsy`, 
       m, ctxWarn)
     }
@@ -58,7 +58,7 @@ let handler = async (m, { conn, usedPrefix, command, isAdmin, isBotAdmin }) => {
         `*${usedPrefix}welcome on* - Activar welcome\n` +
         `*${usedPrefix}welcome off* - Desactivar welcome\n` +
         `*${usedPrefix}welcome status* - Ver estado actual\n\n` +
-        `🎀 *Itsuki-Nakano IA v3.4.0 Beta*\n` +
+        `🎀 *Oriax - Lm IA v3.4.0 Beta*\n` +
         `╰ Creado por: LeoXzzsy`, 
       m, ctxWarn)
     }
@@ -66,7 +66,7 @@ let handler = async (m, { conn, usedPrefix, command, isAdmin, isBotAdmin }) => {
     console.error('Error importing from lib/welcome.js:', importError)
     return conn.reply(m.chat, 
       `❌ Error: No se pudo cargar el sistema de welcome\n\n` +
-      `🎀 *Itsuki-Nakano IA v3.4.0 Beta*\n` +
+      `🎀 *Oriax - Lm IA v3.4.0 Beta*\n` +
       `╰ Creado por: LeoXzzsy`, 
     m, ctxErr)
   }

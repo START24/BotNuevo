@@ -1,10 +1,10 @@
 let handler = async (m, { conn, args, usedPrefix, command, isAdmin, isBotAdmin, participants }) => {
-  const ctxErr = global.rcanalx || { contextInfo: { externalAdReply: { title: '❌ Error', body: 'Itsuki Nakano IA', thumbnailUrl: 'https://qu.ax/FtdSt.jpg', sourceUrl: global.canalOficial || '' }}}
-  const ctxWarn = global.rcanalw || { contextInfo: { externalAdReply: { title: '⚠️ Advertencia', body: 'Itsuki Nakano IA', thumbnailUrl: 'https://qu.ax/FtdSt.jpg', sourceUrl: global.canalOficial || '' }}}
-  const ctxOk = global.rcanalr || { contextInfo: { externalAdReply: { title: '✅ Éxito', body: 'Itsuki Nakano IA', thumbnailUrl: 'https://qu.ax/FtdSt.jpg', sourceUrl: global.canalOficial || '' }}}
+  const ctxErr = global.rcanalx || { contextInfo: { externalAdReply: { title: '❌ Error', body: 'Oriax - Lm IA', thumbnailUrl: 'https://qu.ax/FtdSt.jpg', sourceUrl: global.canalOficial || '' }}}
+  const ctxWarn = global.rcanalw || { contextInfo: { externalAdReply: { title: '⚠️ Advertencia', body: 'Oriax - Lm IA', thumbnailUrl: 'https://qu.ax/FtdSt.jpg', sourceUrl: global.canalOficial || '' }}}
+  const ctxOk = global.rcanalr || { contextInfo: { externalAdReply: { title: '✅ Éxito', body: 'Oriax - Lm IA', thumbnailUrl: 'https://qu.ax/FtdSt.jpg', sourceUrl: global.canalOficial || '' }}}
 
   if (!global.db.data.chats[m.chat].economy && m.isGroup) {
-    return conn.reply(m.chat, `🍙 *ITSUKI - Sistema de Economía*\n\n❌ La economía está desactivada en este grupo\n\n*Administrador*, activa la economía con:\n${usedPrefix}economy on\n\n📚 "No puedo ayudarte si la economía está desactivada..."`, m, ctxErr)
+    return conn.reply(m.chat, `🍙 *Oriax - Lm - Sistema de Economía*\n\n❌ La economía está desactivada en este grupo\n\n*Administrador*, activa la economía con:\n${usedPrefix}economy on\n\n📚 "No puedo ayudarte si la economía está desactivada..."`, m, ctxErr)
   }
 
   let user = global.db.data.users[m.sender]
@@ -14,7 +14,7 @@ let handler = async (m, { conn, args, usedPrefix, command, isAdmin, isBotAdmin, 
 
   if (Date.now() - user.lastwork < cooldown) {
     const tiempoRestante = formatTime(user.lastwork + cooldown - Date.now())
-    return conn.reply(m.chat, `⏰ *ITSUKI - Tiempo de Espera*\n\n⚠️ Debes descansar antes de trabajar de nuevo\n\n*Tiempo restante:* ${tiempoRestante}\n\n📚 "Un buen trabajo requiere descanso adecuado..."`, m, ctxWarn)
+    return conn.reply(m.chat, `⏰ *Oriax - Lm - Tiempo de Espera*\n\n⚠️ Debes descansar antes de trabajar de nuevo\n\n*Tiempo restante:* ${tiempoRestante}\n\n📚 "Un buen trabajo requiere descanso adecuado..."`, m, ctxWarn)
   }
 
   user.lastwork = Date.now()
@@ -23,12 +23,12 @@ let handler = async (m, { conn, args, usedPrefix, command, isAdmin, isBotAdmin, 
   let bonus = Math.random() < 0.2 ? Math.floor(baseGanancia * 0.3) : 0
   let gananciaTotal = baseGanancia + bonus
 
-  let mensajeTrabajo = pickRandom(trabajoItsuki)
+  let mensajeTrabajo = pickRandom(trabajoOriaxLm)
   let emojiTrabajo = pickRandom(['🍙', '🍛', '📚', '✏️', '🎒', '🍱'])
 
   user.coin += gananciaTotal
 
-  await conn.reply(m.chat, `🍙📚 *ITSUKI NAKANO - Trabajo Completado* 📖✨\n\n${emojiTrabajo} *Trabajo realizado:*\n${mensajeTrabajo}\n\n💰 *Ganancias:*\n📊 Ganancia base: ¥${baseGanancia.toLocaleString()}\n${bonus > 0 ? `🎉 Bonus de suerte: +¥${bonus.toLocaleString()}\n` : ''}💵 Total ganado: ¥${gananciaTotal.toLocaleString()}\n🏦 Dinero total: ¥${user.coin.toLocaleString()}\n\n${bonus > 0 ? '🎊✨ ¡Bonus de suerte obtenido! ¡Excelente trabajo!' : '📖✏️ ¡Trabajo completado con éxito!'}\n\n🍱 "El conocimiento y el esfuerzo siempre son recompensados"\n📚💫 *¡Sigue así, el estudio es la clave del éxito!* 🎒`, m, ctxOk)
+  await conn.reply(m.chat, `🍙📚 *Oriax - Lm - Trabajo Completado* 📖✨\n\n${emojiTrabajo} *Trabajo realizado:*\n${mensajeTrabajo}\n\n💰 *Ganancias:*\n📊 Ganancia base: ¥${baseGanancia.toLocaleString()}\n${bonus > 0 ? `🎉 Bonus de suerte: +¥${bonus.toLocaleString()}\n` : ''}💵 Total ganado: ¥${gananciaTotal.toLocaleString()}\n🏦 Dinero total: ¥${user.coin.toLocaleString()}\n\n${bonus > 0 ? '🎊✨ ¡Bonus de suerte obtenido! ¡Excelente trabajo!' : '📖✏️ ¡Trabajo completado con éxito!'}\n\n🍱 "El conocimiento y el esfuerzo siempre son recompensados"\n📚💫 *¡Sigue así, el estudio es la clave del éxito!* 🎒`, m, ctxOk)
 }
 
 handler.help = ['trabajar']
@@ -52,7 +52,7 @@ function pickRandom(list) {
   return list[Math.floor(list.length * Math.random())]
 }
 
-const trabajoItsuki = [
+const trabajoOriaxLm = [
   "Estudié diligentemente para mis exámenes y gané",
   "Ayudé en la librería familiar y recibí",
   "Escribí un ensayo académico excelente y me pagaron",

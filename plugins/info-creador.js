@@ -70,7 +70,7 @@ let handler = async (m, { conn }) => {
     // === Crear mensaje interactivo ===
     const interactiveMessage = proto.Message.InteractiveMessage.fromObject({
       body: proto.Message.InteractiveMessage.Body.fromObject({ text: menuText }),
-      footer: proto.Message.InteractiveMessage.Footer.fromObject({ text: '> 𝐈𝐭𝐬𝐮𝐤𝐢 𝐍𝐚𝐤𝐚𝐧𝐨-𝐈𝐀 𝐯2 🌸' }),
+      footer: proto.Message.InteractiveMessage.Footer.fromObject({ text: '> 𝐎𝐫𝐢𝐚𝐱 - 𝐋𝐦 𝐈𝐀 𝐯2 🌸' }),
       header,
       nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.fromObject({
         buttons: nativeButtons

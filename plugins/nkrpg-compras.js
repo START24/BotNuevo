@@ -24,12 +24,12 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 │ 
 │ ⚔️ *Armas:*
 │ • espada basica, baston magico
-│ • arco itsuki, grimorio oscuro
+│ • arco oriax - lm, grimorio oscuro
 │ • guadaña demoniaca, espada legendaria
 │ 
 │ 🛡️ *Armaduras:*
 │ • tunica basica, armadura acero
-│ • manto itsuki, tunica elfica
+│ • manto oriax - lm, tunica elfica
 │ • armadura demonio, armadura divina
 │ 
 │ 🧪 *Consumibles:*
@@ -52,8 +52,8 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
         'espada basica': 'Espada Básica',
         'baston': 'Bastón Mágico',
         'baston magico': 'Bastón Mágico',
-        'arco': 'Arco de Itsuki',
-        'arco itsuki': 'Arco de Itsuki',
+        'arco': 'Arco de Oriax - Lm',
+        'arco oriax - lm': 'Arco de Oriax - Lm',
         'grimorio': 'Grimorio Oscuro',
         'grimorio oscuro': 'Grimorio Oscuro',
         'guadaña': 'Guadaña Demoníaca',
@@ -65,8 +65,8 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
         'tunica basica': 'Túnica Básica',
         'armadura': 'Armadura de Acero',
         'armadura acero': 'Armadura de Acero',
-        'manto': 'Manto de Itsuki',
-        'manto itsuki': 'Manto de Itsuki',
+        'manto': 'Manto de Oriax - Lm',
+        'manto oriax - lm': 'Manto de Oriax - Lm',
         'tunicaelfica': 'Túnica Élfica',
         'tunica elfica': 'Túnica Élfica',
         'armadurademonio': 'Armadura Demoníaca',

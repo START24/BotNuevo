@@ -1,4 +1,4 @@
-// 🌸 Itsuki Nakano IA - Sistema Antilink Ultra Fuerte (versión corregida)
+// 🌸 Oriax - Lm IA - Sistema Antilink Ultra Fuerte (versión corregida)
 
 let handler = async (m, { conn, args, usedPrefix, command, isAdmin, isBotAdmin }) => {
   const ctxErr = (global.rcanalx || {})
@@ -132,7 +132,7 @@ handler.before = async (m, { conn, isAdmin, isBotAdmin }) => {
     if (isAdmin) return
     if (m.sender === conn.user.jid) return
 
-    // Envío de alerta (formato Itsuki)
+    // Envío de alerta (formato Oriax - Lm)
     await conn.sendMessage(m.chat, { 
       text: `> 💢 𝐄𝐍𝐋𝐀𝐂𝐄 𝐃𝐄𝐓𝐄𝐂𝐓𝐀𝐃𝐎 @${m.sender.split('@')[0]} ⚠️ 𝐄𝐗𝐏𝐔𝐋𝐒𝐈𝐎́𝐍 𝐈𝐍𝐌𝐄𝐃𝐈𝐀𝐓𝐀`,
       mentions: [m.sender]

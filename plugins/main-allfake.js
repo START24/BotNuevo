@@ -13,7 +13,7 @@ let conn = {
   getName: (jid) => 'Bot Owner'
 }
 
-let author = 'Itsuki-IA'
+let author = 'Oriax - Lm IA'
 let sgc = 'https://instagram.com'
 let sig = 'https://instagram.com'
 let sfb = 'https://facebook.com'
@@ -27,7 +27,7 @@ global.iconorcanal = 'https://raw.githubusercontent.com/WillZek/Storage-CB2/main
 global.metanombre = 'Meta AI'
 
 global.idchannel = '120363404434164076@newsletter'
-global.namechannel = '𝆺𝅥 𝆭 ִ ֗ 🍉 𝐈𝐭𝐬𝐮𝐤𝐢 ┆ 𝐍𝐚𝐤𝐚𝐧𝐨𝐯2 𝐏𝐫𝐞𝐦𝐁𝐨𝐭 ✨ ౨ৎ˚₊‧'
+global.namechannel = '𝆺𝅥 𝆭 ִ ֗ 🍉 𝐎𝐫𝐢𝐚𝐱 - 𝐋𝐦 ┆ 𝐈𝐀𝐯2 𝐏𝐫𝐞𝐦𝐁𝐨𝐭 ✨ ౨ৎ˚₊‧'
 let icono = 'https://files.catbox.moe/ncb958.jpg'
 let iconoden = 'https://raw.githubusercontent.com/WillZek/Storage-CB2/main/images/d110942e81b3.jpg'
 let iconodev = 'https://raw.githubusercontent.com/WillZek/Storage-CB2/main/images/d110942e81b3.jpg' 
@@ -89,7 +89,7 @@ try {
     contextInfo: {
       externalAdReply: {
         showAdAttribution: false,
-        title: "𝆺𝅥 𝆭 ִ ֗ 🍉 𝐈𝐭𝐬𝐮𝐤𝐢 ┆ 𝐍𝐚𝐤𝐚𝐧𝐨𝐯2 𝐏𝐫𝐞𝐦𝐁𝐨𝐭 ✨ ౨ৎ˚₊‧",
+        title: "𝆺𝅥 𝆭 ִ ֗ 🍉 𝐎𝐫𝐢𝐚𝐱 - 𝐋𝐦 ┆ 𝐈𝐀𝐯2 𝐏𝐫𝐞𝐦𝐁𝐨𝐭 ✨ ౨ৎ˚₊‧",
         body: global.author,
   thumbnail: fs.readFileSync("./src/Images/thumbnail.jpg"),
   thumbnailUrl: global.pppkecil,
@@ -111,7 +111,7 @@ try {
         title: "👋 " + Sapa() + Pagi(),
         body: author,
         mediaUrl: sgc,
-        description: "𝆺𝅥 𝆭 ִ ֗ 🍉 𝐈𝐭𝐬𝐮𝐤𝐢 ┆ 𝐍𝐚𝐤𝐚𝐧𝐨𝐯2 𝐏𝐫𝐞𝐦𝐁𝐨𝐭 ✨ ౨ৎ˚₊‧",
+        description: "𝆺𝅥 𝆭 ִ ֗ 🍉 𝐎𝐫𝐢𝐚𝐱 - 𝐋𝐦 ┆ 𝐈𝐀𝐯2 𝐏𝐫𝐞𝐦𝐁𝐨𝐭 ✨ ౨ৎ˚₊‧",
         previewType: "PHOTO",
   thumbnail: fs.readFileSync("./src/Images/55111188_p0.jpg"),
         sourceUrl: "https://whatsapp.com/channel/0029VbBQ5sf4NVioq39Efn0v",
@@ -131,7 +131,7 @@ try {
         mediaUrl: sgc,
         renderLargerThumbnail: false,
         showAdAttribution: false,
-        sourceId: "𝆺𝅥 𝆭 ִ ֗ 🍉 𝐈𝐭𝐬𝐮𝐤𝐢 ┆ 𝐍𝐚𝐤𝐚𝐧𝐨𝐯2 𝐏𝐫𝐞𝐦𝐁𝐨𝐭 ✨ ౨ৎ˚₊‧",
+        sourceId: "𝆺𝅥 𝆭 ִ ֗ 🍉 𝐎𝐫𝐢𝐚𝐱 - 𝐋𝐦 ┆ 𝐈𝐀𝐯2 𝐏𝐫𝐞𝐦𝐁𝐨𝐭 ✨ ౨ৎ˚₊‧",
         sourceType: "PDF",
         previewType: "PDF",
         sourceUrl: sgc,
@@ -245,7 +245,7 @@ try {
         newsletterName: namechannel,
       },
       externalAdReply: {
-        title: '𝆺𝅥 𝆭 ִ ֗ 🍉 𝐈𝐭𝐬𝐮𝐤𝐢 ┆ 𝐍𝐚𝐤𝐚𝐧𝐨𝐯2 𝐏𝐫𝐞𝐦𝐁𝐨𝐭 ✨ ౨ৎ˚₊‧',
+        title: '𝆺𝅥 𝆭 ִ ֗ 🍉 𝐎𝐫𝐢𝐚𝐱 - 𝐋𝐦 ┆ 𝐈𝐀𝐯2 𝐏𝐫𝐞𝐦𝐁𝐨𝐭 ✨ ౨ৎ˚₊‧',
         body: '',
         mediaUrl: null,
         description: null,
@@ -277,7 +277,7 @@ try {
         newsletterName: namechannel,
       },
       externalAdReply: {
-        title: '𝆺𝅥 𝆭 ִ ֗ 🍉 𝐈𝐭𝐬𝐮𝐤𝐢 ┆ 𝐍𝐚𝐤𝐚𝐧𝐨𝐯2 𝐏𝐫𝐞𝐦𝐁𝐨𝐭 ✨ ౨ৎ˚₊‧',
+        title: '𝆺𝅥 𝆭 ִ ֗ 🍉 𝐎𝐫𝐢𝐚𝐱 - 𝐋𝐦 ┆ 𝐈𝐀𝐯2 𝐏𝐫𝐞𝐦𝐁𝐨𝐭 ✨ ౨ৎ˚₊‧',
         body: '',
         mediaUrl: null,
         description: null,
@@ -298,7 +298,7 @@ try {
         newsletterName: namechannel,
       },
       externalAdReply: {
-        title: '𝆺𝅥 𝆭 ִ ֗ 🍉 𝐈𝐭𝐬𝐮𝐤𝐢 ┆ 𝐍𝐚𝐤𝐚𝐧𝐨𝐯2 𝐏𝐫𝐞𝐦𝐁𝐨𝐭 ✨ ౨ৎ˚₊‧',
+        title: '𝆺𝅥 𝆭 ִ ֗ 🍉 𝐎𝐫𝐢𝐚𝐱 - 𝐋𝐦 ┆ 𝐈𝐀𝐯2 𝐏𝐫𝐞𝐦𝐁𝐨𝐭 ✨ ౨ৎ˚₊‧',
         body: '',
         mediaUrl: null,
         description: null,

@@ -37,7 +37,7 @@ let handler = async (m, { conn, text, usedPrefix }) => {
 
   if (!text) {    
     return conn.reply(m.chat, `    
-🌸📹 Itsuki Nakano - Descargar Video    
+🌸📹 Oriax - Lm - Descargar Video    
 
 📝 Uso:    
 • ${usedPrefix}play2 <nombre de la canción>    
@@ -48,12 +48,12 @@ let handler = async (m, { conn, text, usedPrefix }) => {
 🎯 Formato:    
 🎥 Video MP4 de alta calidad    
 
-🍱 ¡Disfruta tus videos con Itsuki Nakano! 🌸    
+🍱 ¡Disfruta tus videos con Oriax - Lm! 🌸    
     `.trim(), m, ctxWarn)    
   }    
 
   try {    
-    await conn.reply(m.chat, '*🔎🎬 Itsuki está buscando tu video*', m, ctxOk)    
+    await conn.reply(m.chat, '*🔎🎬 Oriax - Lm está buscando tu video*', m, ctxOk)
 
     const searchResults = await yts(text)    
     if (!searchResults.videos.length) throw new Error('No se encontraron resultados')    
@@ -62,7 +62,7 @@ let handler = async (m, { conn, text, usedPrefix }) => {
     const { url, title, fuente } = await ytdl(video.url)    
 
     const caption = `    
-🌸✨ ¡Itsuki Nakano trae tu video! ✨🌸    
+🌸✨ ¡Oriax - Lm trae tu video! ✨🌸    
 💖 *Título:* ${title}    
 ⏱ *Duración:* ${video.timestamp}    
 👤 *Autor:* ${video.author.name}    

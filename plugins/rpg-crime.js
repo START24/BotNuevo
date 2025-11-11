@@ -1,12 +1,12 @@
 let handler = async (m, { conn, usedPrefix, command }) => {
-  const ctxErr = global.rcanalx || { contextInfo: { externalAdReply: { title: '❌ Error', body: 'Itsuki Nakano IA', thumbnailUrl: 'https://qu.ax/QGAVS.jpg', sourceUrl: global.canalOficial || '' }}}
-  const ctxWarn = global.rcanalw || { contextInfo: { externalAdReply: { title: '⚠️ Advertencia', body: 'Itsuki Nakano IA', thumbnailUrl: 'https://qu.ax/QGAVS.jpg', sourceUrl: global.canalOficial || '' }}}
-  const ctxOk = global.rcanalr || { contextInfo: { externalAdReply: { title: '✅ Acción', body: 'Itsuki Nakano IA', thumbnailUrl: 'https://qu.ax/QGAVS.jpg', sourceUrl: global.canalOficial || '' }}}
+  const ctxErr = global.rcanalx || { contextInfo: { externalAdReply: { title: '❌ Error', body: 'Oriax - Lm IA', thumbnailUrl: 'https://qu.ax/QGAVS.jpg', sourceUrl: global.canalOficial || '' }}}
+  const ctxWarn = global.rcanalw || { contextInfo: { externalAdReply: { title: '⚠️ Advertencia', body: 'Oriax - Lm IA', thumbnailUrl: 'https://qu.ax/QGAVS.jpg', sourceUrl: global.canalOficial || '' }}}
+  const ctxOk = global.rcanalr || { contextInfo: { externalAdReply: { title: '✅ Acción', body: 'Oriax - Lm IA', thumbnailUrl: 'https://qu.ax/QGAVS.jpg', sourceUrl: global.canalOficial || '' }}}
 
   const currency = global.currency || 'Yenes'
 
   if (!db.data.chats[m.chat].economy && m.isGroup) {
-    return conn.reply(m.chat, `🍙📚 *ITSUKI - Sistema de Economía*\n\n❌ Los comandos de economía están desactivados en este grupo\n\n*Administrador*, activa la economía con:\n${usedPrefix}economy on\n\n📖 "No puedo procesar acciones si la economía está desactivada..."`, m, ctxErr)
+    return conn.reply(m.chat, `🍙📚 *Oriax - Lm - Sistema de Economía*\n\n❌ Los comandos de economía están desactivados en este grupo\n\n*Administrador*, activa la economía con:\n${usedPrefix}economy on\n\n📖 "No puedo procesar acciones si la economía está desactivada..."`, m, ctxErr)
   }
 
   let user = global.db.data.users[m.sender]
@@ -20,7 +20,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
   if (ahora < user.lastcrime) {
     const restante = user.lastcrime - ahora
     const wait = formatTimeMs(restante)
-    return conn.reply(m.chat, `🍙⏰ *ITSUKI - Tiempo de Espera*\n\n⚠️ Debes descansar antes de intentar otra acción\n\n⏱️ *Tiempo restante:* ${wait}\n\n📚 "La paciencia es una virtud... espera un poco más"`, m, ctxWarn)
+    return conn.reply(m.chat, `🍙⏰ *Oriax - Lm - Tiempo de Espera*\n\n⚠️ Debes descansar antes de intentar otra acción\n\n⏱️ *Tiempo restante:* ${wait}\n\n📚 "La paciencia es una virtud... espera un poco más"`, m, ctxWarn)
   }
 
   user.lastcrime = ahora + cooldown
@@ -33,7 +33,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     user.coin += cantidad
 
     await conn.reply(m.chat, 
-      `🍙✅ *ITSUKI - Acción Exitosa* 📚✨\n\n` +
+      `🍙✅ *Oriax - Lm - Acción Exitosa* 📚✨\n\n` +
       `${evento.mensaje}\n\n` +
       `💰 *Ganancia:* +¥${cantidad.toLocaleString()} ${currency}\n` +
       `🎒 *Dinero en cartera:* ¥${user.coin.toLocaleString()} ${currency}\n\n` +
@@ -47,7 +47,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     if (user.coin < 0) user.coin = 0
 
     await conn.reply(m.chat,
-      `🍙❌ *ITSUKI - Acción Fallida* 📚⚠️\n\n` +
+      `🍙❌ *Oriax - Lm - Acción Fallida* 📚⚠️\n\n` +
       `${evento.mensaje}\n\n` +
       `💸 *Pérdida:* -¥${cantidad.toLocaleString()} ${currency}\n` +
       `🎒 *Dinero en cartera:* ¥${user.coin.toLocaleString()} ${currency}\n\n` +
@@ -80,7 +80,7 @@ function pickRandom(list) {
 }
 
 const crimen = [
-  // VICTORIAS - Estilo Itsuki (académico/inteligente)
+  // VICTORIAS - Estilo Oriax - Lm (académico/inteligente)
   { tipo: 'victoria', mensaje: "📚 Usaste tus conocimientos para hackear un cajero automático con un exploit del sistema y retiraste efectivo sin alertas" },
   { tipo: 'victoria', mensaje: "📖 Te infiltraste como tutora académica en una mansión y aprovechaste para tomar joyas mientras dabas clases" },
   { tipo: 'victoria', mensaje: "✏️ Falsificaste documentos académicos perfectos y los vendiste a estudiantes desesperados" },
@@ -125,7 +125,7 @@ const crimen = [
   { tipo: 'victoria', mensaje: "📊 Vendiste estadísticas falsas de empleabilidad a universidades" },
   { tipo: 'victoria', mensaje: "🎓 Creaste una agencia de intercambios estudiantiles ficticia" },
 
-  // DERROTAS - Estilo Itsuki
+  // DERROTAS - Estilo Oriax - Lm
   { tipo: 'derrota', mensaje: "📚 Intentaste falsificar un certificado pero el papel y sello eran de mala calidad, te descubrieron" },
   { tipo: 'derrota', mensaje: "📖 Trataste de hackear un sistema escolar pero olvidaste ocultar tu IP y fuiste rastreada" },
   { tipo: 'derrota', mensaje: "✏️ Vendiste respuestas de examen equivocadas y los estudiantes te denunciaron" },
